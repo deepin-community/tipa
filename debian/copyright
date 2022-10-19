@@ -1,0 +1,39 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Fukui Rei <fkr@l.u-tokyo.ac.jp>
+Source: https://www.ctan.org/tex-archive/fonts/tipa/
+
+Files: *
+Copyright: 1996-2004, Fukui Rei <fkr@l.u-tokyo.ac.jp>
+License: LPPL-1.2+
+
+Files: debian/*
+Copyright:
+ 1998-2009, Rafael Laboissiere <rafael@debian.org>
+ 2006, Frank Küster <frank@debian.org>
+ 2006,2014 Norbert Preining <preining@debian.org>
+ 2011, Jakub Wilk <jwilk@debian.org>
+ 2012, Daniele Tricoli <eriol@mornie.org>
+License: PD?
+ Public domain software, produced as part of work done by the
+ United States Government & not subject to copyright in the US.
+ .
+ To the extent that any copyright protections may be considered to be held by
+ the authors of this software in some jurisdiction outside the United States,
+ the authors hereby waive those copyright protections and dedicate the
+ software to the public domain.  Thus, this license may be considered
+ equivalent to Creative Commons 0: ”No Rights Reserved”.
+ .
+ Note that, according to Gnu.org, public domain is compatible with GPL.
+Comment:
+ License field not added yet because waiting for Rafael Laboissiere answer
+ about original Debian packaging stuff license.
+
+License: LPPL-1.2+
+ This program can redistributed and/or modified under the terms
+ of the LaTeX Project Public License Distributed from CTAN
+ archives in directory macros/latex/base/lppl.txt; either
+ version 1.2 of the License, or (at your option) any later version.
+ .
+ You should have received a copy of the LaTeX Project Public License
+ along with this package. If not, see
+ <https://www.latex-project.org/lppl/lppl-1-2.txt>.

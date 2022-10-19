@@ -1,0 +1,77 @@
+Source: tipa
+Section: tex
+Priority: optional
+Maintainer: Debian TeX maintainers <debian-tex-maint@lists.debian.org>
+Uploaders: Daniele Tricoli <eriol@mornie.org>,
+	Norbert Preining <preining@debian.org>,
+	Hilmar Preusse <hille42@web.de>
+Standards-Version: 4.5.1
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: tex-common (>= 3), texlive-latex-recommended,
+ texlive-fonts-recommended, ghostscript, sharutils
+Rules-Requires-Root: no
+Vcs-Git: https://salsa.debian.org/tex-team/tipa.git
+Vcs-Browser: https://salsa.debian.org/tex-team/tipa
+Homepage: https://www.ctan.org/tex-archive/fonts/tipa/
+
+Package: tipa
+Architecture: all
+Depends: texlive-latex-base, texlive-base-bin, ${misc:Depends}
+Conflicts: tipa-type1
+Replaces: tipa-type1
+Suggests: tipa-doc
+Description: system for processing phonetic symbols in LaTeX
+ TIPA is a system for processing IPA (International Phonetic
+ Alphabet) symbols in LaTeX written by Fukui Rei.  TIPA stands for
+ either TeX IPA or Tokyo IPA and derived from the tsipa package, made
+ in 1992 by Kobayashi Hajime, Fukui Rei and Shirakawa Shun.
+ .
+ Among many features of TIPA, the following are the new features as
+ compared with tsipa or any other existing systems for processing IPA
+ symbols:
+ .
+   * A new 256 character encoding for phonetic symbols (`T3'), which
+     includes all the symbols and diacritics found in the recent
+     versions of IPA and some non-IPA symbols.
+   * Complete support of LaTeX2e.
+   * Roman, slanted, bold, bold extended and sans serif font styles.
+   * Easy input method in the IPA environment.
+   * Extended macros for accents and diacritics.
+   * A flexible system of macros for `tone letters'.
+   * An optional package (vowel.sty) for drawing vowel diagrams.
+   * A slightly modified set of fonts that go well when used with
+     Times Roman and Helvetica fonts.
+ .
+ Type 1 fonts for TIPA are also included in this package (to make them
+ available in X11 applications other than LaTeX, please install the
+ xfonts-tipa package).
+
+Package: xfonts-tipa
+Architecture: all
+Multi-Arch: foreign
+Section: fonts
+Pre-Depends: ${misc:Pre-Depends}
+Depends: tipa (= ${source:Version}), ${misc:Depends}
+Description: X11 PostScript Type 1 font for the Phonetic Alphabet
+ TIPA is a system for processing IPA (International Phonetic
+ Alphabet) symbols in LaTeX written by Fukui Rei.  TIPA stands for
+ either TeX IPA or Tokyo IPA and derived from the tsipa package, made
+ in 1992 by Kobayashi Hajime, Fukui Rei and Shirakawa Shun.
+ .
+ This package contains type 1 version of the TIPA fonts for the X
+ Window system.  It contains the pfb and afm files.  The installed X
+ font has the silipa encoding (see
+ http://www.sil.org/computing/fonts/encore-ipa.html).
+
+Package: tipa-doc
+Depends: ${misc:Depends}
+Architecture: all
+Multi-Arch: foreign
+Section: doc
+Description: documentation for the TIPA LaTeX font
+ TIPA is a system for processing IPA (International Phonetic
+ Alphabet) symbols in LaTeX written by Fukui Rei.  TIPA stands for
+ either TeX IPA or Tokyo IPA and derived from the tsipa package, made
+ in 1992 by Kobayashi Hajime, Fukui Rei and Shirakawa Shun.
+ .
+ This package contains the documentation for the TIPA fonts for LaTeX.
